@@ -19,6 +19,17 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
+    <nav class="hamburger">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a>
+      </span>
+    </nav>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
     <div class="food-menu-container">
       <div class="menu-option">
         <h1>Coffee, Juice, & Smoothies</h1>
@@ -46,5 +57,14 @@
       </div>
     </div>
   </div> <!-- End Header Section -->
+  <script>
+    function openSlideMenu() {
+      document.getElementById('mobile-nav').style.display = 'flex';
+    }
+
+    function closeSlideMenu() {
+      document.getElementById('mobile-nav').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
